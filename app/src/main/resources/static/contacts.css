@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8ecec;
+}
+
+header {
+    background: linear-gradient(to bottom,rgba(255, 131, 99, 0.65), rgba(255, 226, 218, 1) );
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Увеличение текста */
+    font-weight: 700; /* Жирный текст */
+    color: rgba(192, 79, 50, 1); /* Цвет текста */
+}
+
+.header-container .right-element {
+    margin-right: 40px; /* Сместить текст левее на 20px от правого края */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(192, 79, 50, 1);
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.teachers-section {
+    background-color: #ffebeb;
+    padding: 20px;
+}
+
+.teacher-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.teacher-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 20px;
+    background-color: #ffe5e5;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    width: 106%; /* Занимает всю ширину экрана */
+    background: linear-gradient(to bottom, rgba(255, 226, 218, 1), rgba(255, 131, 99, 0.65));
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    bottom: -100px;
+}
+
+.social-media {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.social-media p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons a img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section h2 {
+    font-size: 24px; /* Увеличение размера заголовка, если нужно */
+    margin-bottom: 20px; /* Отступ после заголовка */
+}
+
+.contact-text {
+    font-size: 18px; /* Увеличение размера текста */
+    margin-bottom: 15px; /* Отступ между абзацами */
+}
+
+.map-container {
+    margin-top: 20px; /* Отступ перед картой */
+    text-align: center; /* Центрирование карты */
+}
+
+.contact-form {
+    background-color: #ffebeb;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-form h3 {
+    font-size: 20px;
+    margin-bottom: 15px; /* Отступ после "Связаться" */
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f57b7b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+

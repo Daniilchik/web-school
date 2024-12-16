@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8ecec;
+}
+
+header {
+    background: linear-gradient(to bottom,rgba(255, 131, 99, 0.65), rgba(255, 226, 218, 1) );
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Увеличение текста */
+    font-weight: 700; /* Жирный текст */
+    color: rgba(192, 79, 50, 1); /* Цвет текста */
+}
+
+.header-container .right-element {
+    margin-right: 40px; /* Сместить текст левее на 20px от правого края */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(192, 79, 50, 1);
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.teachers-section {
+    background-color: #ffebeb;
+    padding: 20px;
+}
+
+.teacher-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.teacher-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 20px;
+    background-color: #ffe5e5;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #ffe5e5;
+    padding: 20px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.register-section {
+    padding: 20px;
+    text-align: left;
+}
+
+.register-section form {
+    background-color: #ffebeb;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.register-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-section button {
+    padding: 10px 20px;
+    background-color: #f57b7b;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}

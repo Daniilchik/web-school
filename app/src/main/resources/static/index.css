@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8ecec;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 20px; /* Оставляет место для футера */
+}
+
+header {
+    background: linear-gradient(to bottom,rgba(255, 131, 99, 0.65), rgba(255, 226, 218, 1) );
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Увеличение текста */
+    font-weight: 700; /* Жирный текст */
+    color: rgba(192, 79, 50, 1); /* Цвет текста */
+}
+
+.header-container .right-element {
+    margin-right: 40px; /* Сместить текст левее на 20px от правого края */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(192, 79, 50, 1);
+}
+
+main {
+    padding: 20px;
+}
+.welcome-section {
+    background-color: #ffebeb;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-section img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px; /* Ограничивает максимальную высоту */
+    width: auto; /* Позволяет сохранить пропорции изображения */
+}
+
+.teachers-section {
+    background-color: #ffebeb;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teacher-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 210px; /* Ограничивает максимальную высоту */
+    width: auto; /* Позволяет сохранить пропорции изображения */
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-section h2 {
+    font-size: 36px; /* Увеличение размера текста */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    font-weight: bold; /* Жирный текст */
+    color: #C04F32; /* Цвет текста */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    gap: 10px;
+}
+.gallery-container {
+    max-width: 80%; /* Ограничение ширины всей композиции */
+    margin: 0 auto; /* Центрирование контейнера на странице */
+    transform: scale(0.9); /* Уменьшение всей композиции */
+}
+.gallery-item {
+    border-radius: 15px; /* Закругленные углы */
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-item.large {
+    flex: 3; /* Увеличивает ширину большого изображения */
+    max-width: 54.6%; /* Ограничивает максимальную ширину большого изображения */
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1; /* Колонка занимает оставшееся пространство */
+}
+
+.gallery-column .gallery-item {
+    width: 100%;
+}
+
+.gallery-column .gallery-item img {
+    height: calc((100% - 10px) / 2); /* Высота для двух изображений в колонке, включая промежуток */
+    object-fit: cover;
+}
+
+
+footer {
+    width: 106%; /* Занимает всю ширину экрана */
+    background: linear-gradient(to bottom, rgba(255, 226, 218, 1), rgba(255, 131, 99, 0.65));
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    bottom: -100px;
+}
+
+.social-media {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.social-media p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons a img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.slider-section {
+    position: relative;
+    max-width: 100%; /* Ограничение по ширине */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    display: flex;
+    justify-content: center; /* Центрирование слайдера */
+    align-items: center;
+}
+
+.slider {
+    height: 470px; /* Установите нужную высоту */
+    margin-top: 30px; /* Устанавливает отступ сверху слайдера */
+    margin-bottom: 20px; /* Добавьте отступ ниже слайдера */
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Займет всю доступную ширину */
+    max-width: 600px; /* Ограничьте максимальную ширину */
+    aspect-ratio: 16 / 9; /* Соотношение сторон 16:9 */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain; /* Изображение будет обрезано, чтобы заполнить контейнер */
+}
+
+button.prev, button.next, button.pause {
+    position: absolute;
+    bottom: -5px; /* Увеличьте это значение, если нужно еще больше отступа */
+    background-color: rgba(248, 224, 219, 1);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 20px; /* Размер кнопки */
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 18px; /* Размер текста */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Жирный текст */
+}
+
+button.prev { 
+    left: 60px; /* Расстояние слева */
+}
+button.next { 
+    right: 73px; /* Расстояние справа */
+}
+button.pause { 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: 10px; /* Добавление отступа сверху, если нужно */
+}
+
+body.js-enabled .prev, 
+body.js-enabled .next, 
+body.js-enabled .pause {
+    display: block;
+}
+
